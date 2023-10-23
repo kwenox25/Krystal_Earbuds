@@ -1,0 +1,51 @@
+//Mixins
+
+@mixin rotated($radius) {
+      -webkit-transform: rotate($radius);
+      -ms-transform: rotate($radius);
+       transform: rotate($radius);
+ }
+ 
+
+//flex box mixins
+
+@mixin flex-column {
+      display: flex;
+      flex-direction: column;
+}
+    
+@mixin flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+    
+@mixin flex-center-column {
+      @include flex-center;
+      flex-direction: column;
+}
+    
+@mixin flex-center-vert {
+      display: flex;
+      align-items: center;
+}
+    
+@mixin flex-center-horiz {
+      display: flex;
+      justify-content: center;
+}
+
+//fonts
+
+@mixin fontFace($font-family, $file-path) {
+      @font-face {
+          font: {
+              family: $font-family;
+              weight: normal;
+              style: normal;
+          }
+          //Modern Browsers
+          src: url('#{$file-path}.woff') format('woff'),
+          url('#{$file-path}.woff2') format('woff2')
+      }
+  }
