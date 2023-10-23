@@ -1,6 +1,6 @@
 # Krystal Earbuds
 
-Welcome to my Krystal Earbuds promotional page. This is designed to give you an overall feels of an earbuds by clicking the hotspot of each part of it. I used sass, gsap and javascript for the output.
+Welcome to the Krystal Earbuds repository. This project allows you to customize and code the hotspot functionality for your Krystal Earbuds. I use SCSS, GSAP and JavaScript to handle the output.
 
 ## Contributing
 
