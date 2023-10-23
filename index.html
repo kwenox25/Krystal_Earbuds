@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Krystal EarBuds</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/main.css" rel="stylesheet" />
+    <!-- link to greensock main library and scroll plugin -->
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer
+      id="model"
+      src="model/earbuds.gltf"
+      ar
+      ar-modes="scene-viewer webxr quick-look"
+      camera-controls
+      poster="images/poster.webp"
+      shadow-intensity="1.34"
+      exposure="1.09"
+      shadow-softness="0.84"
+    >
+      <button
+        class="Hotspot"
+        slot="hotspot-1"
+        data-position="0.006094305442257054m 1.8320156871565128m -0.08818186453497584m"
+        data-normal="0.11025703903560473m 0.9939031065583989m 0.000010801171903476812m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation" id="hotspot-1">
+          <h2></h2>
+          <p></p>
+        </div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-2"
+        data-position="-0.0023328248997594265m 1.7468014908114655m -0.1817668545899797m"
+        data-normal="-0.289231466830301m 0.4423122707233963m -0.84894346912071m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation" id="hotspot-2">
+          <h2></h2>
+          <p></p>
+        </div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-3"
+        data-position="-0.1366502510382221m 1.28150460704153m -0.8026016028236567m"
+        data-normal="0.7307977393566928m -0.049914663989408525m -0.6807666196795873m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation" id="hotspot-3">
+          <h2></h2>
+          <p></p>
+        </div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-4"
+        data-position="-0.05194938111744751m 1.3001681739445794m -0.41390018150302055m"
+        data-normal="0.7138921977424243m -0.31457513908325474m -0.6256200219568124m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation" id="hotspot-4">
+          <h2></h2>
+          <p></p>
+        </div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-5"
+        data-position="0.06174093836083591m 0.3396938677583716m -0.1808372932079266m"
+        data-normal="0.25474153106261427m -0.19550317190436117m -0.9470402642587108m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation" id="hotspot-5">
+          <h2></h2>
+          <p></p>
+        </div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-6"
+        data-position="-0.0689867534809652m 0.35312413798500464m -0.17940749496419442m"
+        data-normal="-0.26753076811419857m -0.184373678384685m -0.9457450157580148m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation" id="hotspot-6">
+          <h2></h2>
+          <p></p>
+        </div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-7"
+        data-position="0.0024808372174923016m 0.06309973335646912m -0.08083583830959827m"
+        data-normal="0.044823784151748404m -0.9989949090832834m -4.221199781973051e-18m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation" id="hotspot-7">
+          <h2></h2>
+          <p></p>
+        </div>
+      </button>
+      <!-- <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div> -->
+      <button slot="ar-button" id="ar-button">View in your space</button>
+      <div id="ar-prompt">
+        <img src="images/ar_hand_prompt.png" />
+      </div>
+    </model-viewer>
+    <script src="js/main.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
