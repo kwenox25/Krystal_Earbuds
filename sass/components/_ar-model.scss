@@ -8,6 +8,11 @@ model-viewer {
   margin: 0 auto;
 }
 
+.hotspot-image {
+  height: 150px;
+  width: 150px;
+}
+
 // Customize our own hotspot
 .Hotspot {
   background: url(../images/hotspot.svg) center no-repeat;
