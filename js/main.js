@@ -1,3 +1,40 @@
+let menu = document.querySelector(".menu");
+let menuItems = document.querySelectorAll(".menuItem");
+let hamburger = document.querySelector(".hamburger");
+let menuIcon = document.querySelector(".menuIcon");
+let mainHeader = document.querySelector("#main-header");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    hamburger.classList.remove("expanded");
+    mainHeader.classList.remove("showMenu");
+  } else {
+    menu.classList.add("showMenu");
+    hamburger.classList.add("expanded");
+    mainHeader.classList.add("showMenu");
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", toggleMenu);
+});
+
+let lightbox = document.querySelector("#lightbox");
+
+(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  let tlImages = gsap.timeline();
+  tlImages.from("#hero-image", {
+    duration: 3,
+    autoAlpha: 0,
+    x: -200,
+  });
+})();
+
 (() => {
   console.log.apply("IFFE Fired");
 
