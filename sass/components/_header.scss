@@ -80,7 +80,16 @@
 #hero-name h3 {
   font-family: a.$heading-font-family;
   font-weight: normal;
-  font-size: a.$mobile-heading-hero-font-size;
+  font-size: 70px;
+}
+
+#hero {
+  background-color: a.$box-color;
+  height: 600px;
+}
+#hero-name p {
+  top: 50%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {

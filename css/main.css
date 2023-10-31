@@ -92,7 +92,17 @@ p {
 #hero-name h3 {
   font-family: "Space Mono", monospace;
   font-weight: normal;
-  font-size: 65px;
+  font-size: 70px;
+}
+
+#hero {
+  background-color: powderblue;
+  height: 600px;
+}
+
+#hero-name p {
+  top: 50%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
