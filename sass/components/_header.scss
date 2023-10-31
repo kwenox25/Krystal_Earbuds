@@ -1,0 +1,112 @@
+@use "../abstracts" as a;
+
+#main-header {
+  background-color: #fff;
+  height: 80px;
+  position: relative;
+
+  #logo {
+    display: block;
+    height: 60px;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  #main-nav {
+    margin-top: 20px;
+  }
+  #main-nav button {
+    width: 63px;
+    height: 63px;
+    background: url(../images/burger.svg) no-repeat center;
+    transition: all 1s ease;
+    border: 0;
+  }
+
+  #main-nav button.expanded {
+    transform: rotate(90deg);
+  }
+
+  .menuItem {
+    display: block;
+    margin: 2rem 3rem;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .menuItem:hover {
+    color: white;
+  }
+
+  .hamburger {
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: a.$box-color;
+    color: white;
+    list-style: none;
+    padding-top: 7rem;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
+  #main-header.showMenu #logo {
+    display: block;
+    position: absolute;
+  }
+}
+
+#hero-name h3 {
+  font-family: a.$heading-font-family;
+  font-weight: normal;
+  font-size: a.$mobile-heading-hero-font-size;
+}
+
+@media screen and (min-width: 768px) {
+  #sticky-nav-con {
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+  }
+
+  #main-header {
+    height: 90px;
+  }
+
+  #logo {
+    height: 85px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main-header {
+    height: 120px;
+  }
+
+  #logo {
+    height: 85px;
+    max-width: 300px;
+  }
+}

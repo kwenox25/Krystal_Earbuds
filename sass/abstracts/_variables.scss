@@ -1,2 +1,21 @@
-@use 'fonts';
+@use "fonts";
 
+$primary-color: #40823f;
+$secondary-color: #583896;
+$accent-color: #78c36e;
+$body-text-color: #333;
+$grey-color: #e4e4e4;
+$box-color: powderblue;
+$heading-font-family: "Space Mono", monospace;
+$heading-hero-font-size: 170px;
+$strategy-font-size: 90px;
+$tablet-heading-hero-font-size: 100px;
+$tablet-body-font-size: 40px;
+$mobile-heading-hero-font-size: 65px;
+$body-font-family: "Outfit", sans-serif;
+$body-font-size: 30px;
+$mobile-body-font-size: 20px;
+$mobile-about-heading-font-size: 40px;
+$base-font-size: 18px;
+$base-font-weight: 400;
+$footer-heading-font-size: 38px;

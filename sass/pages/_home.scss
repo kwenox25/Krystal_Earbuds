@@ -1,0 +1,173 @@
+@use "../abstracts" as a;
+
+.box {
+  height: 181px;
+}
+
+#paragraph1 {
+  font-size: a.$mobile-body-font-size;
+}
+#paragraph2 {
+  text-align: right;
+  font-size: a.$mobile-body-font-size;
+}
+
+#findout {
+  text-align: center;
+  background-color: a.$box-color;
+}
+
+#findout {
+  display: flex;
+  justify-self: center;
+  padding-top: 20px;
+  padding-left: 45px;
+  margin-top: 30px;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 10rem 10rem 0 0;
+}
+
+#about-me {
+  background-color: #e4e4e4;
+  padding-bottom: 50px;
+  // height: 864px;
+}
+
+#about-me h3 span {
+  display: none;
+}
+
+#about-me h3,
+h4 {
+  font-family: a.$heading-font-family;
+  font-size: a.$mobile-about-heading-font-size;
+  font-weight: normal;
+}
+
+#about-me h4 {
+  position: absolute;
+  text-align: right;
+  margin-left: 0px;
+}
+
+#about-me-image {
+  // margin-top: -50px;
+  height: 352px;
+}
+
+#read-more {
+  background: a.$box-color;
+  height: 45px;
+}
+
+#about-me-info p span {
+  font-style: italic;
+  font-family: a.$heading-font-family;
+}
+
+#interactive-text {
+  background-color: a.$box-color;
+}
+
+.burning-passion {
+  font-size: a.$mobile-about-heading-font-size;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #hero-name h3 {
+    font-family: a.$heading-font-family;
+    font-weight: normal;
+    font-size: a.$tablet-heading-hero-font-size;
+  }
+
+  .box {
+    height: 420px;
+  }
+
+  // #about-me {
+  //   height: 1330px;
+  // }
+  #about-me h3 span {
+    display: none;
+  }
+
+  #about-me-image {
+    // margin-top: -0px;
+    height: 720px;
+  }
+
+  #about-me h3,
+  h4 {
+    font-family: a.$heading-font-family;
+    font-size: a.$tablet-heading-hero-font-size;
+  }
+
+  #about-me-info p {
+    font-size: a.$body-font-size;
+    font-weight: normal;
+    line-height: 30px;
+  }
+  .burning-passion {
+    font-size: a.$tablet-heading-hero-font-size;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero-name h3 {
+    font-family: a.$heading-font-family;
+    font-weight: normal;
+    font-size: a.$heading-hero-font-size;
+    line-height: 200px;
+  }
+
+  .burning-passion {
+    font-size: a.$heading-hero-font-size;
+  }
+
+  .box {
+    height: 420px;
+  }
+
+  #about-me h3 span {
+    display: block;
+    text-align: right;
+    position: absolute;
+    // margin-left: 450px;
+  }
+
+  #about-me h4 {
+    display: none;
+  }
+
+  #about-me-image {
+    display: grid;
+    grid-row: 2/3;
+  }
+
+  #about-me-info {
+    display: grid;
+    grid-row: 2/3;
+  }
+
+  #about-me-info > p:first-child {
+    margin-top: 150px;
+    margin-bottom: 0;
+  }
+
+  #paragraph1 p {
+    font-size: a.$body-font-size;
+    line-height: 32px;
+  }
+  #paragraph2 {
+    margin-top: 30px;
+    text-align: right;
+    font-size: a.$mobile-body-font-size;
+  }
+  #read-more {
+    margin-top: 650px;
+    display: grid;
+    grid-row: 2/3;
+  }
+}
