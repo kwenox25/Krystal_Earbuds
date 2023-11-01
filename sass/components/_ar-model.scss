@@ -4,7 +4,7 @@ model-viewer {
   width: auto;
   max-width: 1200px;
   height: 700px;
-  background-color: #c3e8fd;
+  background-color: #e3f5ff;
   margin: 0 auto;
 }
 
@@ -71,7 +71,7 @@ model-viewer::part(default-progress-bar) {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: 12px 50%;
-  background-color: #920b0b;
+  background-color: hsl(0, 100%, 97%);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -80,7 +80,7 @@ model-viewer::part(default-progress-bar) {
   padding: 0px 16px 0px 40px;
   font-family: Roboto Regular, Helvetica Neue, sans-serif;
   font-size: 14px;
-  color: #4285f4;
+  color: powderblue;
   height: 36px;
   line-height: 36px;
   border-radius: 18px;

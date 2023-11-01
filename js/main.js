@@ -158,3 +158,11 @@ let lightbox = document.querySelector("#lightbox");
 })();
 
 // In this version, the event listeners use regular functions instead of arrow functions, so the "this" keyword inside the event listeners will refer to the DOM element that triggered the event.
+
+(() => {
+  const colors = ["#a9d9ea", "#f8f8f8", "#383838", "#b2e6c5"];
+
+  colors.forEach((color, index) => {
+    document.documentElement.style.setProperty(`--color-${index + 1}`, color);
+  });
+})();

@@ -35,6 +35,10 @@ h5 {
   padding: 0px;
 }
 
+body {
+  background-color: #e6f0ff;
+}
+
 /* ---Utility Classes--- */
 
 .hidden {

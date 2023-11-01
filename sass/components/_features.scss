@@ -1,0 +1,33 @@
+@use "../abstracts" as a;
+
+#key-features {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.features {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.features-text {
+  text-align: center;
+}
+
+.list-unstyled {
+  padding-left: 0px;
+}
+.list-unstyled li {
+  list-style: none;
+}
+
+.list-unstyled li p {
+  padding: 10px;
+  text-align: left;
+}
+
+.features ul li {
+  display: block;
+}

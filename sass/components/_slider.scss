@@ -1,0 +1,36 @@
+@use "../abstracts" as a;
+
+#slider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.quality-div {
+  border-radius: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.image-quality-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: a.$box-color;
+}
+
+.quality-div h3 {
+  font-size: a.$body-font-size;
+}
+
+@media screen and (min-width: 768px) {
+  .quality-div h3 {
+    font-size: a.$body-heading-font-size;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quality-div h3 {
+    font-size: a.$desktop-heading-font-size;
+  }
+}
