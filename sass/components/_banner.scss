@@ -1,0 +1,20 @@
+@use "../abstracts" as a;
+.earbuds-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+  background-color: a.$box-color;
+}
+
+@media screen and (min-width: 768px) {
+  .earbuds-banner {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .earbuds-banner {
+    height: 650px;
+  }
+}

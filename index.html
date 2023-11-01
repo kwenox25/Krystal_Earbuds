@@ -23,7 +23,7 @@
 
   <body>
     <h1 class="hidden">Kwency Dahilan</h1>
-    <div id="sticky-nav-con">
+    <!-- <div id="sticky-nav-con">
       <header id="main-header" class="grid-con">
         <div class="col-start-1 col-end-2 m-col-start-1 m-col-end-2">
           <a href="index.html"
@@ -43,14 +43,13 @@
           <button class="hamburger"></button>
         </nav>
       </header>
-    </div>
+    </div> -->
     <main>
       <section class="grid-con" id="hero">
         <h2 class="hidden">Hero Section</h2>
         <div class="col-span-full" id="hero-name">
           <p>This is where the scrolling effect will be placed.</p>
         </div>
-
         <!-- <div class="m-col-start-6 m-col-end-8 col-span-full" id="findout">
           <a href="#">
             FIND OUT <br />
@@ -114,7 +113,53 @@
         </div>
       </section>
 
-      <section id="interactive-text" class="grid-con">
+      <section id="colours" class="grid-con">
+        <h2 class="hidden">Earbuds Colours</h2>
+        <div class="col-span-full m-col-start-1 m-col-end-9">
+          <h3>Explore a vibrant spectrum of color choices</h3>
+        </div>
+        <div class="colour-circle col-span-full m-col-start-9 m-col-end-13">
+          <ul>
+            <li class="blue"></li>
+            <li class="white"></li>
+            <li class="black"></li>
+            <li class="green"></li>
+          </ul>
+        </div>
+
+        <div class="front-view col-span-full m-col-start-1 m-col-end-9">
+          <p>Front View Image of the earbuds with the selected colour</p>
+        </div>
+        <div class="side-view col-span-full m-col-start-9 m-col-end-13">
+          <p>Side View Image of the earbuds with the selected colour</p>
+          <div class="buy">
+            <p>Buy</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="earbuds-banner grid-con">
+        <h2 class="hidden">Earbuds Banner</h2>
+        <p>Animated earbud images goes here</p>
+      </section>
+
+      <section class="grid-con" id="slider">
+        <h2 class="hidden">Earbuds Banner</h2>
+        <div class="col-span-full m-col-start-1 m-col-end-8 quality-div">
+          <h3>Here, quality takes over</h3>
+          <p>
+            Peer inside the heart of our earbuds with our X-ray slider,
+            revealing the precision engineering and cutting-edge technology that
+            powers your audio adventures. Unveil the craftsmanship that makes
+            our earbuds stand out, delivering exceptional sound and comfort.
+          </p>
+        </div>
+        <div class="image-quality-pic col-span-full m-col-start-8 m-col-end-13">
+          <p>This is an image placeholder.</p>
+        </div>
+      </section>
+
+      <section id="hotspotCon" class="grid-con">
         <div class="col-span-full">
           <model-viewer
             id="model"
@@ -220,85 +265,6 @@
               <img src="images/ar_hand_prompt.png" />
             </div>
           </model-viewer>
-        </div>
-      </section>
-
-      <section id="design-strategy" class="grid-con">
-        <h2 class="hidden">Design with Purpose</h2>
-        <h3 class="col-span-full">designing w/ purpose</h3>
-        <p class="col-span-full l-col-start-6 l-col-end-13">
-          I approach each project with dedication and a focus on delivering
-          results. My goal is to create websites that perfectly match your
-          needs. I also work closely with clients to achieve common goals and
-          desired outcomes.
-        </p>
-
-        <div class="card m-col-start-1 m-col-end-4 col-span-full">
-          <p>01</p>
-          <h4>RESEARCH &#38; PLANNING</h4>
-        </div>
-        <div class="col-span-full card m-col-start-4 m-col-end-7">
-          <p>02</p>
-          <h4>WEBSITE STRUCTURE</h4>
-        </div>
-        <div class="col-span-full card m-col-start-7 m-col-end-10">
-          <p>03</p>
-          <h4>DESIGN CONCEPT</h4>
-        </div>
-        <div class="col-span-full card m-col-start-4 m-col-end-7">
-          <p>04</p>
-          <h4>DEVELOPMENT</h4>
-        </div>
-        <div class="col-span-full card m-col-start-7 m-col-end-10">
-          <p>05</p>
-          <h4>QUALITY ASSURANCE</h4>
-        </div>
-        <div class="col-span-full card m-col-start-10 m-col-end-13">
-          <p>06</p>
-          <h4>LAUNCH/POST-LAUNCH</h4>
-        </div>
-      </section>
-
-      <section id="projects" class="grid-con">
-        <h2 class="hidden">My works</h2>
-        <h3 class="col-span-full">selected <span> ―――――― works</span></h3>
-        <h4 class="col-span-full">―――――― works</h4>
-
-        <!-- <a href="#" class="view-more col-span-full l-col-start-1 l-col-end-3"
-          >VIEW MORE</a
-        > -->
-
-        <p class="col-span-full l-col-start-6 l-col-end-13">
-          Here are some select projects that showcase my passion for creating
-          memorable web experiences, packaging, products and brand to life.
-        </p>
-
-        <div id="project-container" class="col-span-full">
-          <ul class="case">
-            <li class="case-li">
-              <h5>CRS APP</h5>
-              <div class="content2">
-                <p>CASE 1</p>
-              </div>
-              <footer><a href="#lightbox">View Case →</a></footer>
-            </li>
-
-            <li class="case-li">
-              <h5>QUATRO</h5>
-              <div class="content2">
-                <p>CASE 2</p>
-              </div>
-              <footer><a href="#">View Case →</a></footer>
-            </li>
-
-            <li class="case-li">
-              <h5>OWL PUB</h5>
-              <div class="content2">
-                <p>CASE 3</p>
-              </div>
-              <footer><a href="#">View Case →</a></footer>
-            </li>
-          </ul>
         </div>
       </section>
     </main>
