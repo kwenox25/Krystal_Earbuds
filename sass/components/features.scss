@@ -1,0 +1,24 @@
+#key-features {
+  margin-top: 80px;
+}
+
+.features {
+  height: 250px;
+}
+
+.features-text {
+  text-align: center;
+}
+
+.list-unstyled li {
+  list-style: none;
+}
+.features ul li {
+  display: block;
+  list-style-type: none;
+  list-style: none;
+}
+
+li::marker {
+  display: none;
+}
