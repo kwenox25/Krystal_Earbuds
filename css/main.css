@@ -351,7 +351,7 @@ model-viewer {
   width: auto;
   max-width: 1200px;
   height: 700px;
-  background-color: #e3f5ff;
+  background-color: #c3e8fd;
   margin: 0 auto;
 }
 
@@ -400,6 +400,11 @@ model-viewer {
   font-weight: 300;
 }
 
+.HotspotAnnotation img {
+  height: 100px;
+  width: 100px;
+}
+
 .HotspotAnnotation h2 {
   font-size: 18px;
   margin-bottom: 5px;
@@ -416,7 +421,7 @@ model-viewer::part(default-progress-bar) {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: 12px 50%;
-  background-color: hsl(0, 100%, 97%);
+  background-color: #920b0b;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -425,7 +430,7 @@ model-viewer::part(default-progress-bar) {
   padding: 0px 16px 0px 40px;
   font-family: Roboto Regular, Helvetica Neue, sans-serif;
   font-size: 14px;
-  color: powderblue;
+  color: #4285f4;
   height: 36px;
   line-height: 36px;
   border-radius: 18px;
@@ -533,6 +538,7 @@ model-viewer > #ar-prompt > img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .colour-circle ul li:nth-child(1) {
@@ -551,35 +557,25 @@ model-viewer > #ar-prompt > img {
   background-color: var(--color-4, #b2e6c5);
 }
 
-.front-view {
-  background-color: powderblue;
+.front-view,
+.side-view {
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 320px;
   border-radius: 10px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding: 20px;
   text-align: center;
+}
+
+.front-view {
+  background-image: url("/images/front-and-back-blue.png");
 }
 
 .side-view {
-  background-color: white;
-  height: 320px;
-  border-radius: 10px;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-}
-
-.side-view img {
-  display: grid;
-  max-height: 100%;
-  position: relative; /* Add position: relative to establish stacking context */
-  z-index: 1;
-  top: 0;
-  left: 0;
-  margin: 0 auto;
+  background-image: url("/images/sideview-blue.png");
 }
 
 .buy {
@@ -590,8 +586,6 @@ model-viewer > #ar-prompt > img {
   border-radius: 15px;
   margin: 0 auto;
   cursor: pointer;
-  margin-top: -20px;
-  z-index: 2;
 }
 
 .buy p {
@@ -614,10 +608,10 @@ model-viewer > #ar-prompt > img {
     height: 43px;
   }
   .front-view {
-    height: 320px;
+    height: 340px;
   }
   .side-view {
-    height: 320px;
+    height: 340px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -630,6 +624,12 @@ model-viewer > #ar-prompt > img {
   .colour-circle ul li {
     width: 70px;
     height: 70px;
+  }
+  .front-view {
+    height: 450px;
+  }
+  .side-view {
+    height: 450px;
   }
 }
 .earbuds-banner {
