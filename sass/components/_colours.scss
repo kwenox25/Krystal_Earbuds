@@ -23,6 +23,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .colour-circle ul li:nth-child(1) {
@@ -55,22 +56,25 @@
 
 .side-view {
   background-color: white;
+  background-image: url("/images/sideview-blue.png");
   height: 320px;
   border-radius: 10px;
   align-items: center;
   padding: 20px;
   text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.side-view img {
-  display: grid;
-  max-height: 100%;
-  position: relative; /* Add position: relative to establish stacking context */
-  z-index: 1;
-  top: 0;
-  left: 0;
-  margin: 0 auto;
-}
+// .side-view img {
+//   display: grid;
+//   max-height: 100%;
+//   position: relative; /* Add position: relative to establish stacking context */
+//   z-index: 1;
+//   top: 0;
+//   left: 0;
+//   margin: 0 auto;
+// }
 
 .buy {
   opacity: 0;
@@ -80,8 +84,6 @@
   border-radius: 15px;
   margin: 0 auto;
   cursor: pointer;
-  margin-top: -20px;
-  z-index: 2;
 }
 
 .buy p {
