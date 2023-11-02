@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Kwency Dahilan</title>
+    <title>Krystal Earbuds</title>
     <!-- Link to reset or normalize before main.css
     only choose one -->
     <link
@@ -22,8 +22,8 @@
   </head>
 
   <body>
-    <h1 class="hidden">Kwency Dahilan</h1>
-    <!-- <div id="sticky-nav-con">
+    <h1 class="hidden">Krystal Earbuds</h1>
+    <div id="sticky-nav-con">
       <header id="main-header" class="grid-con">
         <div class="col-start-1 col-end-2 m-col-start-1 m-col-end-2">
           <a href="index.html"
@@ -43,7 +43,7 @@
           <button class="hamburger"></button>
         </nav>
       </header>
-    </div> -->
+    </div>
     <main>
       <section class="grid-con" id="hero">
         <h2 class="hidden">Hero Section</h2>
@@ -119,11 +119,11 @@
           <h3>Explore a vibrant spectrum of color choices</h3>
         </div>
         <div class="colour-circle col-span-full m-col-start-9 m-col-end-13">
-          <ul>
-            <li class="blue"></li>
-            <li class="white"></li>
-            <li class="black"></li>
-            <li class="green"></li>
+          <ul id="color-list">
+            <li><a class="blue" href="#"></a></li>
+            <li><a class="white" href="#"></a></li>
+            <li><a class="black" href="#"></a></li>
+            <li><a class="green" href="#"></a></li>
           </ul>
         </div>
 
@@ -131,7 +131,7 @@
           <p>Front View Image of the earbuds with the selected colour</p>
         </div>
         <div class="side-view col-span-full m-col-start-9 m-col-end-13">
-          <p>Side View Image of the earbuds with the selected colour</p>
+          <img id="side-view-image" src="images/sideview-blue.png" />
           <div class="buy">
             <p>Buy</p>
           </div>
@@ -179,11 +179,7 @@
               data-normal="0.11025703903560473m 0.9939031065583989m 0.000010801171903476812m"
               data-visibility-attribute="visible"
             >
-              <div class="HotspotAnnotation" id="hotspot-1">
-                <h2></h2>
-                <p></p>
-                <img class="hotspot-image" />
-              </div></button
+              <div class="HotspotAnnotation" id="hotspot-1"></div></button
             ><button
               class="Hotspot"
               slot="hotspot-2"
@@ -191,11 +187,7 @@
               data-normal="-0.289231466830301m 0.4423122707233963m -0.84894346912071m"
               data-visibility-attribute="visible"
             >
-              <div class="HotspotAnnotation" id="hotspot-2">
-                <h2></h2>
-                <p></p>
-                <img class="hotspot-image" />
-              </div></button
+              <div class="HotspotAnnotation" id="hotspot-2"></div></button
             ><button
               class="Hotspot"
               slot="hotspot-3"
@@ -203,11 +195,7 @@
               data-normal="0.7307977393566928m -0.049914663989408525m -0.6807666196795873m"
               data-visibility-attribute="visible"
             >
-              <div class="HotspotAnnotation" id="hotspot-3">
-                <h2></h2>
-                <p></p>
-                <img class="hotspot-image" />
-              </div></button
+              <div class="HotspotAnnotation" id="hotspot-3"></div></button
             ><button
               class="Hotspot"
               slot="hotspot-4"
@@ -215,11 +203,7 @@
               data-normal="0.7138921977424243m -0.31457513908325474m -0.6256200219568124m"
               data-visibility-attribute="visible"
             >
-              <div class="HotspotAnnotation" id="hotspot-4">
-                <h2></h2>
-                <p></p>
-                <img class="hotspot-image" />
-              </div></button
+              <div class="HotspotAnnotation" id="hotspot-4"></div></button
             ><button
               class="Hotspot"
               slot="hotspot-5"
@@ -227,11 +211,7 @@
               data-normal="0.25474153106261427m -0.19550317190436117m -0.9470402642587108m"
               data-visibility-attribute="visible"
             >
-              <div class="HotspotAnnotation" id="hotspot-5">
-                <h2></h2>
-                <p></p>
-                <img class="hotspot-image" />
-              </div></button
+              <div class="HotspotAnnotation" id="hotspot-5"></div></button
             ><button
               class="Hotspot"
               slot="hotspot-6"
@@ -239,11 +219,7 @@
               data-normal="-0.26753076811419857m -0.184373678384685m -0.9457450157580148m"
               data-visibility-attribute="visible"
             >
-              <div class="HotspotAnnotation" id="hotspot-6">
-                <h2></h2>
-                <p></p>
-                <img class="hotspot-image" />
-              </div></button
+              <div class="HotspotAnnotation" id="hotspot-6"></div></button
             ><button
               class="Hotspot"
               slot="hotspot-7"
@@ -251,15 +227,11 @@
               data-normal="0.044823784151748404m -0.9989949090832834m -4.221199781973051e-18m"
               data-visibility-attribute="visible"
             >
-              <div class="HotspotAnnotation" id="hotspot-7">
-                <h2></h2>
-                <p></p>
-                <img class="hotspot-image" />
-              </div>
+              <div class="HotspotAnnotation" id="hotspot-7"></div>
             </button>
             <!-- <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-        </div> -->
+        <div class="update-bar"></div>
+      </div> -->
             <button slot="ar-button" id="ar-button">View in your space</button>
             <div id="ar-prompt">
               <img src="images/ar_hand_prompt.png" />
