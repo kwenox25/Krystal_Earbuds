@@ -119,12 +119,16 @@ menuItems.forEach(function (menuItem) {
 })();
 
 let buttonColours = document.querySelectorAll(".colour-circle ul li"),
+  frontBackImage = document.querySelector(".front-view"),
   sideViewImage = document.querySelector(".side-view");
 
 function changeBGImage(event) {
   event.preventDefault();
 
   const colorClass = event.target.querySelector("a").classList[0];
+
+  const imagePath2 = `/images/front-and-back-${colorClass}.png`;
+  frontBackImage.style.backgroundImage = `url(${imagePath2})`;
 
   const imagePath = `/images/sideview-${colorClass}.png`;
   sideViewImage.style.backgroundImage = `url(${imagePath})`;

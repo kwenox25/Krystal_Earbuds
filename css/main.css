@@ -557,28 +557,25 @@ model-viewer > #ar-prompt > img {
   background-color: var(--color-4, #b2e6c5);
 }
 
-.front-view {
-  background-color: powderblue;
+.front-view,
+.side-view {
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 320px;
   border-radius: 10px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding: 20px;
   text-align: center;
 }
 
+.front-view {
+  background-image: url("/images/front-and-back-blue.png");
+}
+
 .side-view {
-  background-color: white;
   background-image: url("/images/sideview-blue.png");
-  height: 320px;
-  border-radius: 10px;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .buy {
@@ -611,10 +608,10 @@ model-viewer > #ar-prompt > img {
     height: 43px;
   }
   .front-view {
-    height: 320px;
+    height: 340px;
   }
   .side-view {
-    height: 320px;
+    height: 340px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -627,6 +624,12 @@ model-viewer > #ar-prompt > img {
   .colour-circle ul li {
     width: 70px;
     height: 70px;
+  }
+  .front-view {
+    height: 450px;
+  }
+  .side-view {
+    height: 450px;
   }
 }
 .earbuds-banner {
