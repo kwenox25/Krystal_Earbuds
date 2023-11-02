@@ -22,147 +22,98 @@ menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
 
-let lightbox = document.querySelector("#lightbox");
-
 (() => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  let tlImages = gsap.timeline();
-  tlImages.from("#hero-image", {
-    duration: 3,
-    autoAlpha: 0,
-    x: -200,
-  });
-})();
-
-(() => {
-  console.log.apply("IFFE Fired");
-
   //variables
   const model = document.querySelector("#model");
-  const hotSpots = document.querySelectorAll(".Hotspot");
-
-  //functions
-  function loaded() {
-    hotSpots.forEach((hotSpot) => {
-      hotSpot.style.display = "block";
-    });
-  }
-
-  let infoHotspots = [
+  const hotspots = document.querySelectorAll(".Hotspot");
+  const infoBoxes = [
     {
       title: "Air Vent",
-      desc: "The air vent is a small opening or perforation in the earbud's casing designed to provide ventilation. It helps prevent a vacuum seal in your ear, enhancing comfort during extended use and allowing for better sound quality by equalizing air pressure inside and outside the earbud.",
-      icon: "images/airvent.png",
+      text: "The air vent is a small opening or perforation in the earbud's casing designed to provide ventilation. It helps prevent a vacuum seal in your ear, enhancing comfort during extended use and allowing for better sound quality by equalizing air pressure inside and outside the earbud.",
+      image: "images/airvent.png",
     },
 
     {
       title: "L for Left Label",
-      desc: "The L label on the earbud serves as a clear indication of which ear the earbud should be placed in. This is essential for users to ensure they're wearing the earbuds correctly for optimal audio quality and comfort.",
-      icon: "images/label.png",
+      text: "The L label on the earbud serves as a clear indication of which ear the earbud should be placed in. This is essential for users to ensure they're wearing the earbuds correctly for optimal audio quality and comfort.",
+      image: "images/label.png",
     },
 
     {
       title: "Soft Earbud:",
-      desc: "Soft earbuds are the part of the earbud that comes into direct contact with the user's ear canal. They are typically made from soft, comfortable materials to ensure a secure and comfortable fit. The choice of soft materials helps reduce discomfort during extended use and enhances noise isolation.",
-      icon: "images/earbuds.png",
+      text: "Soft earbuds are the part of the earbud that comes into direct contact with the user's ear canal. They are typically made from soft, comfortable materials to ensure a secure and comfortable fit. The choice of soft materials helps reduce discomfort during extended use and enhances noise isolation.",
+      image: "images/earbuds.png",
     },
 
     {
       title: "Sound Output Hole:",
-      desc: "The sound output hole is where audio is emitted from the earbud. It's the point where the music or other audio signals generated within the earbud's driver or speaker are released into the ear canal to be heard by the user.",
-      icon: "images/sound.png",
+      text: "The sound output hole is where audio is emitted from the earbud. It's the point where the music or other audio signals generated within the earbud's driver or speaker are released into the ear canal to be heard by the user.",
+      image: "images/sound.png",
     },
 
     {
       title: "Magnetic Charging Pin 1:",
-      desc: "Magnetic charging pins are connectors used for recharging the earbuds. They are often magnetized to help the earbuds snap into place on a charging dock or case, ensuring a secure and reliable connection for charging. Magnetic Charging Pin 1 implies it's one of the two connectors on the earbud.",
-      icon: "images/charge.png",
+      text: "Magnetic charging pins are connectors used for recharging the earbuds. They are often magnetized to help the earbuds snap into place on a charging dock or case, ensuring a secure and reliable connection for charging. Magnetic Charging Pin 1 implies it's one of the two connectors on the earbud.",
+      image: "images/charge.png",
     },
 
     {
       title: "Magnetic Charging Pin 2:",
-      desc: "Similar to Magnetic Charging Pin 1, this is the second connector used for charging the earbud. Having two pins often allows for faster charging and more secure connection between the earbud and the charging dock or case.",
-      icon: "images/charge.png",
+      text: "Similar to Magnetic Charging Pin 1, this is the second connector used for charging the earbud. Having two pins often allows for faster charging and more secure connection between the earbud and the charging dock or case.",
+      image: "images/charge.png",
     },
 
     {
       title: "Microphone Hole:",
-      desc: "The microphone hole is where the built-in microphone is located on the earbud. This is essential for voice calls, voice commands, or any other feature that requires audio input from the user. The hole allows sound to reach the microphone for clear communication.",
-      icon: "images/microphone.png",
+      text: "The microphone hole is where the built-in microphone is located on the earbud. This is essential for voice calls, voice commands, or any other feature that requires audio input from the user. The hole allows sound to reach the microphone for clear communication.",
+      image: "images/microphone.png",
     },
   ];
 
-  const imagePaths = [
-    "images/airvent.png",
-    "images/label.png",
-    "images/earbuds.png",
-    "images/sound.png",
-    "images/charge.png",
-    "images/charge.png",
-    "images/microphone.png",
-  ];
+  //functions
+  function modelLoaded() {
+    hotspots.forEach((hotspot) => {
+      hotspot.style.display = "block";
+    });
+  }
 
-  function showInfo(e) {
-    // const selected = document.querySelector(`#${this.slot}`);
-    // const h2 = selected.querySelector("h2");
-    // const p = selected.querySelector("p");
+  function loadInfo() {
+    //Roughed in code not functional
 
-    // // Replace the content of the title and description
-    // const hotspotIndex = Number(this.slot.split("-")[1]) - 1; // Extract hotspot index
-    // h2.textContent = infoHotspots[hotspotIndex].title;
-    // p.textContent = infoHotspots[hotspotIndex].desc;
+    infoBoxes.forEach((infoBox, index) => {
+      let selected = document.querySelector(`#hotspot-${index + 1}`);
 
-    const hotspotIndex = Number(this.slot.split("-")[1]) - 1; // Extract hotspot index
-    const selected = document.querySelector(`#hotspot-${hotspotIndex + 1}`);
+      const titleElement = document.createElement("h2");
+      titleElement.textContent = infoBox.title;
 
-    const titleElement = selected.querySelector("h2");
-    const descElement = selected.querySelector("p");
-    const imgElement = selected.querySelector(".hotspot-image");
+      const textElement = document.createElement("p");
+      textElement.textContent = infoBox.text;
 
-    const infoHotspot = infoHotspots[hotspotIndex]; // Get the hotspot info
+      const imgElement = document.createElement("img");
+      imgElement.src = infoBox.image;
 
-    titleElement.textContent = infoHotspot.title;
-    descElement.textContent = infoHotspot.desc;
+      selected.appendChild(imgElement);
+      selected.appendChild(titleElement);
+      selected.appendChild(textElement);
+    });
+  }
+  loadInfo();
 
-    imgElement.src = imagePaths[hotspotIndex];
-
+  function showInfo() {
+    let selected = document.querySelector(`#${this.slot}`);
     gsap.to(selected, 1, { autoAlpha: 1 });
   }
 
-  function hideInfo(e) {
-    //console.log(e.currentTarget.slot);
+  function hideInfo() {
     let selected = document.querySelector(`#${this.slot}`);
     gsap.to(selected, 1, { autoAlpha: 0 });
   }
 
-  function loadInfo() {
-    infoHotspots.forEach((infoHotspot, index) => {
-      let selected = document.querySelector(`#hotspot-${index + 1}`);
-      // console.log(selected);
-      // console.log(infoHotspot.title);
-      // console.log(infoHotspot.desc);
-    });
-  }
+  //Event listeners
+  model.addEventListener("load", modelLoaded);
 
-  loadInfo();
-
-  //event listeners
-
-  model.addEventListener("load", loaded);
-
-  hotSpots.forEach((hotSpot) => {
-    hotSpot.addEventListener("mouseover", showInfo);
-    hotSpot.addEventListener("mouseout", hideInfo);
-  });
-})();
-
-// In this version, the event listeners use regular functions instead of arrow functions, so the "this" keyword inside the event listeners will refer to the DOM element that triggered the event.
-
-(() => {
-  const colors = ["#a9d9ea", "#f8f8f8", "#383838", "#b2e6c5"];
-
-  colors.forEach((color, index) => {
-    document.documentElement.style.setProperty(`--color-${index + 1}`, color);
+  hotspots.forEach(function (hotspot) {
+    hotspot.addEventListener("mouseenter", showInfo);
+    hotspot.addEventListener("mouseleave", hideInfo);
   });
 })();
