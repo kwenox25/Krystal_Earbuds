@@ -571,6 +571,10 @@ model-viewer > #ar-prompt > img {
 }
 
 .front-view {
+  margin-bottom: 20px;
+}
+
+.front-view {
   background-image: url("/images/front-and-back-blue.png");
 }
 
@@ -665,23 +669,36 @@ model-viewer > #ar-prompt > img {
 
 .image-quality-pic {
   display: flex;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
   background-color: powderblue;
+  height: 320px;
 }
 
 .quality-div h3 {
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .quality-div h3 {
     font-size: 50px;
   }
+  .image-quality-pic {
+    height: 365px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .quality-div h3 {
     font-size: 80px;
+  }
+  .quality-div p {
+    line-height: 30px;
+  }
+  .image-quality-pic {
+    height: 412px;
   }
 }
 .box {
