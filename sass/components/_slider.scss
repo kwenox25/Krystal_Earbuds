@@ -14,23 +14,38 @@
 
 .image-quality-pic {
   display: flex;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
   background-color: a.$box-color;
+  height: 320px;
 }
 
 .quality-div h3 {
-  font-size: a.$body-font-size;
+  font-size: a.$mobile-about-heading-font-size;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .quality-div h3 {
     font-size: a.$body-heading-font-size;
   }
+  .image-quality-pic {
+    height: 365px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .quality-div h3 {
     font-size: a.$desktop-heading-font-size;
+  }
+
+  .quality-div p {
+    line-height: 30px;
+  }
+
+  .image-quality-pic {
+    height: 412px;
   }
 }
