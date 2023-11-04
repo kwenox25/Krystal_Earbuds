@@ -6,40 +6,16 @@
 
 #footer-con h3 {
   font-family: a.$heading-font-family;
-  font-size: a.$footer-heading-font-size;
-  font-weight: 700;
+  font-size: 15px;
 }
 
-#contact-form {
-  background-color: a.$box-color;
-  color: rgb(27, 27, 27);
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#contact-form p {
-  text-align: left;
-}
-
-#contact-form form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+#logo-footer {
   margin-top: 30px;
-  margin-bottom: 40px;
-  text-align: left;
+  height: 60px;
+  max-width: 70%;
 }
 
-#contact-form label {
-  padding: 6px;
-  border-style: none;
-  height: 46px;
-}
-
-#contact-form input,
-textarea {
+.newsletter input {
   outline: none;
   background: transparent;
   border: none;
@@ -49,16 +25,17 @@ textarea {
   margin-top: 10px;
 }
 
-#contact-form input[type="submit"] {
+.newsletter {
+  margin-bottom: 50px;
+}
+.newsletter input[type="submit"] {
   margin-top: 10px;
   border: none;
-  background-color: a.$grey-color;
+  background-color: powderblue;
   transition: all 200ms ease-in;
 }
-#contact-form form label span {
-  color: red;
-}
 
+.retail ul,
 .quicklinks ul,
 .contact ul {
   margin-top: auto;
@@ -66,12 +43,14 @@ textarea {
   padding-left: 0;
 }
 
+.retail ul li a,
 .quicklinks ul li a,
 .contact ul li a {
   text-decoration: none;
   color: #000;
 }
 
+.retail ul li,
 .quicklinks ul li,
 .contact ul li {
   font-size: 15px;
@@ -116,6 +95,7 @@ textarea {
     display: flex;
   }
 
+  .retail ul li,
   .quicklinks ul li,
   .contact ul li {
     font-size: 15px;
@@ -123,15 +103,12 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
-  #footer-con h3 {
-    transform: rotate(-90deg);
-    font-size: 70px;
-    font-weight: bolder;
-  }
-
   #footer-icons ul li {
     margin-right: 40px;
   }
+
+  .newsletter-con,
+  .retail-con,
   .quicklinks-con,
   .contacts-con {
     grid-row: 2/2;
