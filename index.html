@@ -265,9 +265,33 @@
     <footer id="footer-con">
       <div class="grid-con">
         <h2 class="hidden">Footer Info</h2>
+        <!-- <section class="newsletter col-span-full m-col-start-1 m-col-end-5">
+          <h3>JOIN OUR NEWSLETTER</h3>
+        </section> -->
+
+        <section class="retail-con col-span-full l-col-start-2 l-col-end-5">
+          <div class="newsletter">
+            <h3>JOIN OUR NEWSLETTER</h3>
+            <form action="email.php" method="POST" enctype="text/plain">
+              <input
+                name="emailAddress"
+                type="text"
+                required
+                placeholder="Email address here"
+              />
+              <input name="submit" type="submit" value="SUBMIT" />
+            </form>
+          </div>
+          <div class="retail">
+            <h4>WHERE TO BUY</h4>
+            <ul>
+              <li><a href="#">See authorized retailers</a></li>
+            </ul>
+          </div>
+        </section>
 
         <section
-          class="quicklinks-con col-start-1 col-end-3 m-col-start-6 m-col-end-8"
+          class="quicklinks-con col-start-1 col-end-3 l-col-start-6 l-col-end-8"
         >
           <div class="quicklinks">
             <h4>Menu</h4>
@@ -281,7 +305,7 @@
           </div>
         </section>
         <section
-          class="contacts-con col-start-3 col-end-5 m-col-start-8 m-col-end-10"
+          class="contacts-con col-start-3 col-end-5 l-col-start-8 l-col-end-10"
         >
           <div class="contact">
             <h4>Categories</h4>
@@ -294,11 +318,11 @@
             </ul>
           </div>
         </section>
-        <div class="col-span-full m-col-start-10 m-col-end-13" id="logo-footer">
+        <div class="col-span-full l-col-start-10 l-col-end-13" id="logo-footer">
           <a href="#"><img src="images/krystal.svg" /></a>
         </div>
         <section
-          class="col-span-full m-col-start-10 m-col-end-13"
+          class="col-span-full l-col-start-10 l-col-end-13"
           id="company-info"
         >
           <div class="quicklinks">
@@ -311,7 +335,7 @@
           </div>
           <div
             id="footer-icons"
-            class="col-span-full m-col-start-10 m-col-end-13"
+            class="col-span-full l-col-start-10 l-col-end-13"
           >
             <ul>
               <li><i class="fa fa-youtube-play"></i></li>
