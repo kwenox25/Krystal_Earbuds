@@ -159,6 +159,27 @@
           <p>This is an image placeholder.</p>
         </div>
       </section>
+      <section class="xray-slider grid-con">
+        <h2 class="hidden">X-Ray revealer</h2>
+        <div id="mobile-tablet-view" class="col-span-full">
+          <img src="images/earbud-x-ray.jpg" alt="xray earbuds" />
+          <img src="images/earbud.jpg" alt="regular view of earbuds" />
+        </div>
+        <div id="outerShell" class="col-span-full">
+          <div id="imageCon">
+            <!-- xray version -->
+            <div class="slideImage image-right"></div>
+            <!-- rendered version -->
+            <div class="slideImage image-left"></div>
+            <!-- drag bar -->
+            <div class="slideImage image-drag"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="battery-life" class="grid-con">
+        <div class="col-span-full"></div>
+      </section>
 
       <section id="hotspotCon" class="grid-con">
         <div class="col-span-full">
@@ -244,74 +265,63 @@
     <footer id="footer-con">
       <div class="grid-con">
         <h2 class="hidden">Footer Info</h2>
-        <h3 class="col-span-full">I'm all ears.</h3>
 
         <section
-          id="contact-form"
-          class="col-span-full l-col-start-7 l-col-end-13"
-        >
-          <p>
-            It all begins with an idea. Maybe you want to launch a business.
-            Maybe you want to turn a hobby into something more. Whatever it is,
-            the way you tell your story online can make all the difference.
-          </p>
-          <form action="email.php" method="POST" enctype="text/plain">
-            <label>First Name<span>*</span></label>
-            <input name="firstName" type="text" placeholder="First Name" />
-            <label>Last Name<span>*</span></label>
-            <input name="lastName" type="text" placeholder="Last Name" />
-            <label>Email address<span>*</span></label>
-            <input
-              name="emailAddress"
-              type="text"
-              required
-              placeholder="Email address here"
-            />
-
-            <label>Message </label>
-            <textarea
-              name="msg"
-              placeholder="Write your message here'"
-            ></textarea>
-            <input name="submit" type="submit" value="SUBMIT" />
-          </form>
-        </section>
-        <section
-          class="quicklinks-con col-start-1 col-end-3 m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-3"
+          class="quicklinks-con col-start-1 col-end-3 m-col-start-6 m-col-end-8"
         >
           <div class="quicklinks">
-            <h4>QUICKLINKS</h4>
+            <h4>Menu</h4>
             <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">projects</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
         </section>
         <section
-          class="contacts-con col-start-3 col-end-5 m-col-start-5 m-col-end-8 l-col-start-3 l-col-end-5"
+          class="contacts-con col-start-3 col-end-5 m-col-start-8 m-col-end-10"
         >
           <div class="contact">
-            <h4>WHATSAPP</h4>
+            <h4>Categories</h4>
             <ul>
-              <li><a href="#">whatsapp</a></li>
-              <li><a href="#">email</a></li>
-              <li><a href="#">telegram</a></li>
-              <li><a href="#">skype</a></li>
+              <li><a href="#">Headphones</a></li>
+              <li><a href="#">Earphones</a></li>
+              <li><a href="#">Accesories</a></li>
+              <li><a href="#">Applications</a></li>
+              <li><a href="#">Speakers</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="col-span-full m-col-start-10 m-col-end-13" id="logo-footer">
+          <a href="#"><img src="images/krystal.svg" /></a>
+        </div>
+        <section
+          class="col-span-full m-col-start-10 m-col-end-13"
+          id="company-info"
+        >
+          <div class="quicklinks">
+            <ul>
+              <li><a href="#">info@krystalearbuds.com</a></li>
+              <li><a href="#">+1 656 519 5406</a></li>
+              <li><a href="#">137 Dundas Street</a></li>
+              <li><a href="#">London, Ontario, Canada</a></li>
+            </ul>
+          </div>
+          <div
+            id="footer-icons"
+            class="col-span-full m-col-start-10 m-col-end-13"
+          >
+            <ul>
+              <li><i class="fa fa-youtube-play"></i></li>
+              <li><i class="fa fa-twitter"></i></li>
+              <li><i class="fa fa-instagram"></i></li>
+              <li><i class="fa fa-facebook"></i></li>
             </ul>
           </div>
         </section>
         <div class="line col-span-full"></div>
-        <div id="footer-icons" class="col-span-full">
-          <ul>
-            <li><i class="fa fa-behance"></i></li>
-            <li><i class="fa fa-twitter"></i></li>
-            <li><i class="fa fa-linkedin"></i></li>
-            <li><i class="fa fa-github"></i></li>
-            <li>© 2023 Kwency Dahilan. All right reserved.</li>
-          </ul>
-        </div>
       </div>
     </footer>
 
