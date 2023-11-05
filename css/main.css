@@ -895,10 +895,47 @@ model-viewer > #ar-prompt > img {
     height: 100%;
   }
   .image-drag {
-    background-color: #666;
+    background-color: #1b1b1b;
     left: 50%;
-    width: 10px;
+    width: 2px;
     cursor: pointer;
+  }
+  .image-drag:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -9px;
+    top: 50%;
+    margin-top: -10px;
+    background-color: white;
+    transform: rotate(45deg);
+    transition: all 0.1s ease-in-out;
+  }
+  .image-drag:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: -5px;
+    top: 50%;
+    margin-top: -6px;
+    background-color: white;
+    transform: rotate(45deg);
+    transition: all 0.1s ease-in-out;
+  }
+  .image-drag:active:before,
+  .image-drag:hover:before {
+    background-color: black;
+    border: 2px solid white;
+  }
+  .image-drag:active:before,
+  .image-drag:focus:before,
+  .image-drag:active:after,
+  .image-drag:hover:before,
+  .image-drag:hover:before,
+  .image-drag:hover:after {
+    background-color: black;
   }
 }
 .battery {

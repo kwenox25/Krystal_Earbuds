@@ -154,7 +154,7 @@ buttonColours.forEach((button) => {
       if (x < min) {
         x = min;
       } else if (x > max) {
-        x = max - 10;
+        x = max - 2;
       }
 
       drag.style.left = x + "px";
