@@ -1,0 +1,79 @@
+@use "../abstracts" as a;
+.battery {
+  background: rgb(139, 233, 98);
+  background: linear-gradient(
+    180deg,
+    rgba(139, 233, 98, 1) 0%,
+    rgb(81, 162, 90) 100%
+  );
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.column {
+  width: 100%; /* Take the full width initially */
+  margin-bottom: 20px;
+}
+
+.column p {
+  font-size: 16px;
+  font-family: a.$heading-font-family;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.column span {
+  font-size: 100px;
+  float: left;
+  font-weight: 600;
+  margin: 22px 0 20px 5px;
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .battery {
+    flex-direction: row; /* For screens wider than 768px, display columns side by side */
+  }
+
+  .battery {
+    padding-left: 60px;
+  }
+  .column {
+    width: 100%; /* Take the full width initially */
+    margin-right: 50px;
+    margin-bottom: 0px;
+  }
+
+  .column {
+    width: 42%; /* Adjust the width for spacing when displayed side by side */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .battery {
+    padding-left: 120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .column {
+    width: 100%; /* Take the full width initially */
+    margin-right: 160px;
+    width: 40%;
+  }
+
+  .column span {
+    font-size: 120px;
+    float: left;
+    font-weight: 600;
+    margin: 30px 0 20px 5px;
+    padding-right: 10px;
+  }
+
+  .column p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
