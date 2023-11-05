@@ -9,8 +9,9 @@
     only choose one -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,24 +25,32 @@
   <body>
     <h1 class="hidden">Krystal Earbuds</h1>
     <div id="sticky-nav-con">
-      <header id="main-header" class="grid-con">
-        <div class="col-start-1 col-end-2 m-col-start-1 m-col-end-2">
-          <a href="index.html"
-            ><img src="images/kd-logo-icon.svg" id="logo"
-          /></a>
-        </div>
-        <nav
-          id="main-nav"
-          class="col-start-4 col-end-5 m-col-start-12 m-col-end-13"
-        >
-          <ul class="menu">
-            <li><a class="menuItem" href="#">HOME</a></li>
-            <li><a class="menuItem" href="#">ABOUT</a></li>
-            <li><a class="menuItem" href="#">PROJECTS </a></li>
-            <li><a class="menuItem" href="#">CONTACT</a></li>
-          </ul>
-          <button class="hamburger"></button>
+      <header class="grid-con" id="main-header">
+        <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+          <h2 class="hidden">Main Navigation</h2>
+          <button id="button"></button>
+          <div id="burger-con">
+            <ul id="burger-menu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">PRODUCTS</a></li>
+              <li><a href="#">SUPPORT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
         </nav>
+        <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
+          <img src="images/krystal.svg" alt="Krystal Logo" />
+        </div>
+        <!-- <div id="book-now-header" class="m-col-span-2 book-now">
+          <p>Book Now</p>
+        </div> -->
+        <!-- 
+        <div class="menu-icons m-col-span-2">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-user"></i>
+          <i class="fas fa-shopping-bag"></i>
+        </div> -->
       </header>
     </div>
     <main>
