@@ -1,16 +1,183 @@
 @use "../abstracts" as a;
 
-#hero-image {
-  visibility: hidden;
+#hero-con {
+  padding: 0px;
 }
 
-#about-me-image {
-  overflow: hidden;
+#earbuds-desc,
+#headline {
+  text-align: center;
 }
 
-#hero-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
+#headline h2 {
+  text-align: center;
+  font-family: a.$body-font-family;
+  color: #000;
+  font-size: a.$tablet-body-font-size;
+  font-weight: 500;
+}
+
+#earbuds-desc {
+  font-family: a.$body-font-family;
+  padding: 0 20px 0 20px;
+  color: white;
+  color: #000;
+  text-align: center;
+}
+
+#earbuds-desc h3 {
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.35rem;
+}
+
+#earbuds-desc p {
+  color: grey;
+  text-align: center;
+  font-size: 14px;
+}
+
+#earbuds-desc button {
+  margin: 0 auto; /* Center the button horizontally within the grid cell */
+  display: block;
+}
+
+.button-order {
+  background: #469e56;
+  border-radius: 999px;
+  // box-shadow: green;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  // line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+@media screen and (min-width: 768px) {
+  #hero-con img {
+    grid-row: 1/1;
+  }
+
+  #earbuds-desc,
+  #headline {
+    grid-row: 1/2;
+  }
+
+  #hero-con {
+    padding: 0px;
+  }
+
+  #hero-con img,
+  #earbuds-desc,
+  #headline {
+    grid-row: 1/1;
+  }
+
+  #earbuds-desc,
+  #headline {
+    text-align: center;
+  }
+
+  #headline {
+    grid-row: 1/1;
+    margin-top: 16.5rem;
+  }
+
+  #headline h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  #earbuds-desc {
+    margin-top: 19rem;
+    color: white;
+  }
+
+  #earbuds-desc h3 {
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.25rem;
+  }
+
+  #earbuds-desc p {
+    color: rgb(219, 217, 234);
+    text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: 0px;
+  }
+
+  #earbuds-desc button {
+    margin: 0 auto; /* Center the button horizontally within the grid cell */
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero-con {
+    padding: 0px;
+  }
+
+  #hero-con img,
+  #earbuds-desc,
+  #headline {
+    grid-row: 1/1;
+  }
+
+  #earbuds-desc,
+  #headline {
+    text-align: center;
+  }
+
+  #headline {
+    grid-row: 1/1;
+    margin-top: 27.5rem;
+  }
+
+  #headline h2 {
+    text-align: center;
+    font-family: a.$body-font-family;
+    color: white;
+    font-size: a.$tablet-body-font-size;
+    font-weight: 500;
+  }
+
+  #earbuds-desc {
+    font-family: a.$body-font-family;
+    margin-top: 31rem;
+    color: white;
+    text-align: center;
+  }
+
+  #earbuds-desc h3 {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.35rem;
+  }
+
+  #earbuds-desc p {
+    color: rgb(219, 217, 234);
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  #earbuds-desc button {
+    margin: 0 auto; /* Center the button horizontally within the grid cell */
+    display: block;
+  }
 }
