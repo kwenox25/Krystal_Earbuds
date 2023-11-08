@@ -258,6 +258,10 @@ p {
   max-width: 70%;
 }
 
+.retail-con {
+  margin-top: 50px;
+}
+
 @media screen and (min-width: 768px) {
   #footer-icons ul {
     display: flex;
@@ -278,6 +282,9 @@ p {
   .contacts-con {
     grid-row: 2/2;
     margin-top: auto;
+  }
+  .retail-con {
+    margin-top: 0px;
   }
 }
 #design-strategy {
@@ -448,6 +455,18 @@ p {
   #earbuds-desc button {
     margin: 0 auto; /* Center the button horizontally within the grid cell */
     display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  #headline {
+    grid-row: 1/1;
+    margin-top: 20.5rem;
+  }
+  #headline h2 {
+    color: white;
+  }
+  #earbuds-desc {
+    margin-top: 23rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -804,12 +823,12 @@ model-viewer > #ar-prompt > img {
   background-color: white;
 }
 
-.image-quality-pic {
-  display: flex;
+.three-earbuds {
   border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  background-color: powderblue;
+}
+
+.image-quality-pic {
+  border-radius: 10px;
   height: 320px;
 }
 
@@ -883,8 +902,8 @@ model-viewer > #ar-prompt > img {
   .image-left {
     background: url(../images/earbud.jpg) no-repeat;
     background-size: contain;
-    width: 50%;
     background-attachment: fixed;
+    width: 50%;
     height: 100%;
   }
   .image-drag {
