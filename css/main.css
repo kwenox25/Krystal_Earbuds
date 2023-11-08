@@ -1014,6 +1014,26 @@ model-viewer > #ar-prompt > img {
     line-height: 30px;
   }
 }
+#spotify-con {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.spotify-column {
+  background-color: white;
+}
+
+.spotify-div {
+  border-radius: 10px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.spotify-div h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
 .box {
   height: 181px;
 }
