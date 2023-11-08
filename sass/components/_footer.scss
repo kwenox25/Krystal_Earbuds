@@ -90,6 +90,10 @@
   max-width: 70%;
 }
 
+.retail-con {
+  margin-top: 50px;
+}
+
 @media screen and (min-width: 768px) {
   #footer-icons ul {
     display: flex;
@@ -113,5 +117,9 @@
   .contacts-con {
     grid-row: 2/2;
     margin-top: auto;
+  }
+
+  .retail-con {
+    margin-top: 0px;
   }
 }
