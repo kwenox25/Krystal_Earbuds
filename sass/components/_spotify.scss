@@ -1,21 +1,65 @@
 @use "../abstracts" as a;
 
+.spotifyLogo {
+  width: 25%;
+  margin-bottom: 20px;
+}
 #spotify-con {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.spotify-column {
-  background-color: white;
+.spotify-column p {
+  margin-top: 25px;
 }
-
-.spotify-div {
-  border-radius: 10px;
-  padding: 30px;
-  border-radius: 10px;
+.spotify-column a {
+  color: green;
+  text-decoration: none;
 }
-
 .spotify-div h3 {
   font-size: a.$mobile-about-heading-font-size;
   font-weight: 600;
+}
+
+.spotify-div {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.spotify-column {
+  width: 100%; /* Take the full width initially */
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .battery {
+    padding-left: 60px;
+  }
+  .spotify-column {
+    width: 100%;
+
+    margin-bottom: 0px;
+  }
+
+  .spotify-column {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .spotify-div {
+    flex-direction: row;
+  }
+  .spotify-column:first-child {
+    padding-top: 40px;
+    padding-left: 100px;
+  }
+  .spotify-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
