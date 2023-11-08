@@ -101,7 +101,6 @@ p {
 
 @media screen and (min-width: 768px) {
   #sticky-nav-con {
-    position: sticky;
     background-color: #fff;
     top: 0px;
     z-index: 1;
@@ -787,24 +786,11 @@ model-viewer > #ar-prompt > img {
     height: 450px;
   }
 }
-.earbuds-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 190px;
-  background-color: powderblue;
+#explode-view {
+  max-width: 100%;
+  /* width: 100vw; */
 }
 
-@media screen and (min-width: 768px) {
-  .earbuds-banner {
-    height: 600px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .earbuds-banner {
-    height: 650px;
-  }
-}
 #slider {
   margin-top: 40px;
   margin-bottom: 40px;
