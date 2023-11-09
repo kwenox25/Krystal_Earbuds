@@ -1,16 +1,15 @@
-# Dahilan_KwencyMaye_Portfolio
+# Krystal Earbuds
 
-Welcome to my GitHub profile! My name is Kwency Dahilan and I am a graduating student from the Interactive Media Design program, passionate about creating user-friendly and visually appealing digital experiences. With a strong foundation in design principles and a growing skill set in front-end development, I aspire to become a front-end developer who specializes in crafting exceptional User Interfaces (UI) and User Experiences (UX).
+Welcome to Krystal Earbuds, where style meets superior sound! These sleek and stylish earbuds are crafted with care to provide you with an unparalleled audio experience. This README file will guide you through the features, installation, and customization options of Krystal Earbuds.
 
-What I Bring to the Table
+## Technologies Used
 
-- Design Sensibility: I have a keen eye for aesthetics and an understanding of user-centered design principles. I believe that design should not only be visually pleasing but also highly functional.
-
-- Technical Proficiency: Through my education and personal projects, I have gained proficiency in HTML, CSS, and JavaScript, enabling me to translate design concepts into interactive and responsive web interfaces.
-
-- User-Centric Approach: I am passionate about creating digital solutions that prioritize the needs and preferences of the end-users. I conduct thorough user research and usability testing to ensure that the products I design are intuitive and user-friendly.
-
-- Collaborative Spirit: I enjoy collaborating with cross-functional teams, including developers, product managers, and fellow designers, to create cohesive and impactful digital products. I believe that teamwork and open communication are key to success in any project.
+GSAP: I've utilized GSAP (GreenSock Animation Platform) to create smooth and engaging animations, enhancing the user experience.
+JavaScript: The functionality of Krystal Earbuds is powered by JavaScript, making it a dynamic and responsive web application.
+HTML & CSS: The structure and styling of the web pages are built using HTML and CSS to ensure a clean and intuitive user interface.
+SASS: I've employed SASS (Syntactically Awesome Stylesheets) to streamline and enhance the styling process, making the code more maintainable.
+3D Modeling
+For the creation of Krystal Earbuds models, I turned to Cinema 4D, a powerful 3D modeling and animation software. The intricate details and realistic representation of the earbuds are a result of the capabilities offered by Cinema 4D.
 
 ## Installation
 
