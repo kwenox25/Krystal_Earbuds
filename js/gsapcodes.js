@@ -1,10 +1,10 @@
 (() => {
   gsap.registerPlugin(SplitText);
 
-  var tlSplitBurrowing = gsap.timeline(),
-    SplitBurrowing = new SplitText(".titleColours", { type: "words,chars" }),
-    chars = SplitBurrowing.chars;
-  tlSplitBurrowing.from(
+  var tlSplitTitle = gsap.timeline(),
+    SplitTitle = new SplitText(".titleColours", { type: "words,chars" }),
+    chars = SplitTitle.chars;
+  tlSplitTitle.from(
     chars,
     {
       duration: 0.8,
@@ -64,5 +64,58 @@
 
   navLinks.forEach((link) => {
     link.addEventListener("click", scrollLink);
+  });
+})();
+
+(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#hotspotCon",
+      start: "top center",
+      // end: "center center",
+      scrub: 1,
+    },
+  });
+  tl.from(
+    ".krystal-single",
+    1,
+    {
+      autoAlpha: 0,
+      scale: 0,
+      ease: "elastic.in(1, 0.5)",
+      x: -200,
+    },
+    0.5
+  );
+
+  tl.staggerFrom(
+    ".krystal-waves",
+    1,
+    {
+      autoAlpha: 0,
+      x: -200,
+      ease: "power2.out",
+    },
+    0.2
+  );
+  tl.from(".high", 1, {
+    autoAlpha: 0,
+    scale: 0,
+    ease: "elastic.in(1, 0.5)",
+    x: -200,
+  });
+  tl.from(".medium", 1, {
+    autoAlpha: 0,
+    scale: 0,
+    ease: "elastic.in(1, 0.5)",
+    x: -200,
+  });
+  tl.from(".low", 1, {
+    autoAlpha: 0,
+    scale: 0,
+    ease: "elastic.in(1, 0.5)",
+    x: -200,
   });
 })();

@@ -20,6 +20,7 @@
   margin-bottom: 20px;
   transition: all 0.5s ease;
   border: 0;
+  margin-left: 92%;
 }
 #main-nav button.expanded {
   transform: rotate(90deg);
@@ -151,13 +152,11 @@
   }
 
   #main-nav {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     padding-left: 30px;
   }
 
   #header-icons {
-    margin-top: 14px;
     margin-bottom: 2%;
   }
 
@@ -179,9 +178,13 @@
   }
 
   #main-nav {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
     margin-left: 60px;
+  }
+
+  #header-icons {
+    margin-top: 14px;
+    margin-bottom: 2%;
   }
 
   #burger-con ul li {

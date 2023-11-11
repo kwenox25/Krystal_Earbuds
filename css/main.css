@@ -40,6 +40,7 @@ p {
   margin-bottom: 20px;
   transition: all 0.5s ease;
   border: 0;
+  margin-left: 92%;
 }
 
 #main-nav button.expanded {
@@ -78,7 +79,7 @@ p {
 }
 
 #main-nav ul li a:hover {
-  color: #260662;
+  color: #260a5a;
 }
 
 #main-nav ul li {
@@ -160,12 +161,10 @@ p {
     margin-right: 0px;
   }
   #main-nav {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     padding-left: 30px;
   }
   #header-icons {
-    margin-top: 14px;
     margin-bottom: 2%;
   }
 }
@@ -174,9 +173,12 @@ p {
     height: 80px;
   }
   #main-nav {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
     margin-left: 60px;
+  }
+  #header-icons {
+    margin-top: 14px;
+    margin-bottom: 2%;
   }
   #burger-con ul li {
     margin-right: 50px;
@@ -909,15 +911,21 @@ model-viewer > #ar-prompt > img {
 
 @media screen and (min-width: 768px) {
   .quality-div h3 {
-    font-size: 50px;
+    font-size: 30px;
+  }
+  .quality-div {
+    padding-bottom: 10px;
   }
   .image-quality-pic {
-    height: 365px;
+    height: 260px;
   }
 }
 @media screen and (min-width: 1200px) {
   .quality-div h3 {
     font-size: 80px;
+  }
+  .quality-div {
+    padding-bottom: 30px;
   }
   .quality-div p {
     line-height: 30px;
@@ -1137,6 +1145,94 @@ model-viewer > #ar-prompt > img {
   .spotify-div {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+.table-mobile-bass-con-view {
+  display: block;
+}
+
+#krystal-banner {
+  display: none;
+}
+
+#bass-con div {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.bass-div {
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.bass-div h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .bass-div h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .table-mobile-bass-con-view {
+    display: none;
+  }
+  #krystal-banner {
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  #krystal-banner div {
+    text-align: center;
+    color: #6482a4;
+    font-weight: bold;
+  }
+  .krystal-waves {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    visibility: hidden;
+  }
+  .krystal-single {
+    position: absolute;
+    top: 36%;
+    left: 56%;
+    visibility: hidden;
+  }
+  .high {
+    position: absolute;
+    top: 12%;
+    left: 9%;
+    visibility: hidden;
+    text-align: center;
+  }
+  .medium {
+    position: absolute;
+    top: 28%;
+    left: 23%;
+    visibility: hidden;
+    text-align: center;
+  }
+  .low {
+    position: absolute;
+    top: 37%;
+    left: 46%;
+    visibility: hidden;
+    text-align: center;
+  }
+  .bass-div {
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .bass-div h3 {
+    font-size: 25px;
   }
 }
 .box {
