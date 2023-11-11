@@ -1,12 +1,14 @@
 @use "../abstracts" as a;
 
 #footer-con {
-  background-color: a.$grey-color;
+  background-color: a.$accent-color;
+  color: #fff;
 }
 
 #footer-con h3 {
   font-family: a.$heading-font-family;
-  font-size: 15px;
+  font-size: a.$base-font-size;
+  font-weight: 600;
 }
 
 #logo-footer {
@@ -19,7 +21,7 @@
   outline: none;
   background: transparent;
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #eee;
   width: 100%;
   padding: 6px;
   margin-top: 10px;
@@ -47,13 +49,13 @@
 .quicklinks ul li a,
 .contact ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .retail ul li,
 .quicklinks ul li,
 .contact ul li {
-  font-size: 15px;
+  font-size: a.$footer-content-font-size;
   margin-bottom: 20px;
 }
 
@@ -61,14 +63,14 @@
   font-family: a.$heading-font-family;
   font-size: 15px;
   margin-bottom: 20px;
-  color: #000;
+  color: #fff;
   opacity: 40%;
 }
 
 .line {
   width: 100%; /* Set the width of the line to 100% of its container */
   height: 2px; /* Set the height to control the thickness of the line */
-  background-color: #000; /* Set the line color (e.g., black) */
+  background-color: #eee; /* Set the line color (e.g., black) */
   margin: 10px 0; /* Add margin to control spacing around the line */
 }
 
@@ -88,10 +90,36 @@
   margin-top: 30px;
   height: 60px;
   max-width: 70%;
+  color: #fff;
 }
 
 .retail-con {
   margin-top: 50px;
+}
+
+#copyrightCon ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+#copyrightCon ul li {
+  font-size: a.$footer-content-font-size;
+  margin-right: 30px;
+}
+
+#copyrightCon ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+#copyrightCon li:first-child {
+  font-weight: bold;
+}
+#copyrightCon li:last-child {
+  font-size: a.$footer-content-font-size;
+  padding-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -102,7 +130,13 @@
   .retail ul li,
   .quicklinks ul li,
   .contact ul li {
-    font-size: 15px;
+    font-size: a.$footer-content-font-size;
+  }
+
+  #copyrightCon li:last-child {
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 

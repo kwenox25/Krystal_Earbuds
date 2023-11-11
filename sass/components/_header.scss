@@ -1,5 +1,11 @@
 @use "../abstracts" as a;
-
+#sticky-nav-con {
+  background-color: #fff;
+}
+#header-icons a {
+  text-decoration: none;
+  color: #000;
+}
 #main-nav button {
   width: 20px;
   height: 20px;
@@ -39,7 +45,7 @@
 }
 
 #main-nav ul li a:hover {
-  color: #9a2018;
+  color: a.$primary-color;
 }
 
 #main-nav ul li {
@@ -54,38 +60,31 @@
   margin-bottom: 10px;
 }
 
-.book-now {
-  background-color: #9a2018;
-  color: #fff;
-  font-size: 16px;
-  font-style: italic;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.book-now:hover {
-  box-shadow: inset 0px -120px 0px rgb(196, 28, 28);
-}
-
-#book-now-header {
-  display: none;
-}
-
 #logo {
   margin-bottom: 20px;
 }
 
 #logo img {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+}
+
+#header-icons ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+#header-icons ul li {
+  font-size: 20px;
+  margin-right: 55px;
 }
 
 @media screen and (min-width: 768px) {
   #sticky-nav-con {
     // position: sticky;
-    background-color: #fff;
+
     top: 0px;
     // border-bottom: solid 1px #c3c3c3;
     z-index: 1;
@@ -119,12 +118,13 @@
   #burger-con ul li {
     font-size: 15px;
     font-family: a.$body-font-family;
-    font-weight: bold;
-    margin-right: 40px;
+    // font-weight: bold;
+    margin-right: 20px;
   }
 
   #burger-con ul li:last-child {
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: 0px;
   }
 
   #main-nav {
@@ -133,13 +133,20 @@
     padding-left: 30px;
   }
 
-  #book-now-header {
-    display: flex;
-    margin-right: -16px;
+  #header-icons {
+    margin-top: 14px;
+    margin-bottom: 2%;
   }
 
-  #book-now-hero {
-    display: none;
+  #header-icons li:first-child {
+    margin-left: 0px;
+  }
+  #header-icons ul li {
+    margin-right: 21px;
+  }
+  #header-icons li:last-child {
+    margin-left: auto;
+    margin-right: 0px;
   }
 }
 
@@ -151,19 +158,23 @@
   #main-nav {
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-left: 25px;
+    margin-left: 60px;
   }
 
   #burger-con ul li {
-    margin-right: 25px;
+    margin-right: 50px;
     font-size: 16px;
   }
 
+  #burger-con ul li:last-child {
+    margin-left: auto;
+    margin-right: 0px;
+  }
   #burger-con {
     margin-top: 28px;
   }
 
-  .book-now {
-    font-size: 18px;
+  #header-icons ul li {
+    margin-right: 55px;
   }
 }
