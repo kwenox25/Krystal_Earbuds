@@ -36,15 +36,31 @@
           <div id="burger-con">
             <ul id="burger-menu">
               <li><a href="index.html">HOME</a></li>
-              <li><a href="#">SHOP</a></li>
-              <li><a href="#">PRODUCTS</a></li>
-              <li><a href="#">SUPPORT</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="#colours">SHOP</a></li>
+              <li><a href="#hotspotCon">SPECS</a></li>
+              <li><a href="#key-features">FEATURES</a></li>
+              <li><a href="#footer-con">CONTACT</a></li>
             </ul>
           </div>
         </nav>
         <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
           <img src="images/krystal.svg" alt="Krystal Logo" />
+        </div>
+        <div
+          id="header-icons"
+          class="col-span-full m-col-start-11 m-col-end-13"
+        >
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-search"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-user-o"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </li>
+          </ul>
         </div>
       </header>
     </div>
@@ -413,7 +429,9 @@
           </div>
         </section>
         <div class="col-span-full l-col-start-10 l-col-end-13">
-          <a href="#"><img src="images/krystal.svg" id="logo-footer" /></a>
+          <a href="#"
+            ><img src="images/krystal-white.svg" id="logo-footer"
+          /></a>
         </div>
         <section
           class="col-span-full l-col-start-10 l-col-end-13"
@@ -440,6 +458,16 @@
           </div>
         </section>
         <div class="line col-span-full"></div>
+        <div id="copyrightCon" class="col-span-full">
+          <ul>
+            <li><a href="#">Canada/English(EN)</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li>© 2023 Krystal Inc. All right reserved.</li>
+          </ul>
+        </div>
       </div>
     </footer>
 
@@ -451,12 +479,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
 
+    <!-- ScrollTo plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!-- ModelViewer plugin -->
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <!-- ScrollTrigger plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
 
     <!-- our main js file -->

@@ -8,13 +8,22 @@ body {
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
-  color: #78c36e;
+  color: #6482a4;
   margin-bottom: 20px;
 }
 
 p {
   line-height: 24px;
   margin-bottom: 20px;
+}
+
+#sticky-nav-con {
+  background-color: #fff;
+}
+
+#header-icons a {
+  text-decoration: none;
+  color: #000;
 }
 
 #main-nav button {
@@ -56,7 +65,7 @@ p {
 }
 
 #main-nav ul li a:hover {
-  color: #9a2018;
+  color: #260662;
 }
 
 #main-nav ul li {
@@ -71,37 +80,29 @@ p {
   margin-bottom: 10px;
 }
 
-.book-now {
-  background-color: #9a2018;
-  color: #fff;
-  font-size: 16px;
-  font-style: italic;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.book-now:hover {
-  box-shadow: inset 0px -120px 0px rgb(196, 28, 28);
-}
-
-#book-now-header {
-  display: none;
-}
-
 #logo {
   margin-bottom: 20px;
 }
 
 #logo img {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+}
+
+#header-icons ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+#header-icons ul li {
+  font-size: 20px;
+  margin-right: 55px;
 }
 
 @media screen and (min-width: 768px) {
   #sticky-nav-con {
-    background-color: #fff;
     top: 0px;
     z-index: 1;
     /* had to set z-index as css filters was causing images to overlap, see below */
@@ -128,23 +129,30 @@ p {
   #burger-con ul li {
     font-size: 15px;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    margin-right: 40px;
+    margin-right: 20px;
   }
   #burger-con ul li:last-child {
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: 0px;
   }
   #main-nav {
     margin-top: 2%;
     margin-bottom: 2%;
     padding-left: 30px;
   }
-  #book-now-header {
-    display: flex;
-    margin-right: -16px;
+  #header-icons {
+    margin-top: 14px;
+    margin-bottom: 2%;
   }
-  #book-now-hero {
-    display: none;
+  #header-icons li:first-child {
+    margin-left: 0px;
+  }
+  #header-icons ul li {
+    margin-right: 21px;
+  }
+  #header-icons li:last-child {
+    margin-left: auto;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -154,26 +162,32 @@ p {
   #main-nav {
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-left: 25px;
+    margin-left: 60px;
   }
   #burger-con ul li {
-    margin-right: 25px;
+    margin-right: 50px;
     font-size: 16px;
+  }
+  #burger-con ul li:last-child {
+    margin-left: auto;
+    margin-right: 0px;
   }
   #burger-con {
     margin-top: 28px;
   }
-  .book-now {
-    font-size: 18px;
+  #header-icons ul li {
+    margin-right: 55px;
   }
 }
 #footer-con {
-  background-color: #e4e4e4;
+  background-color: #6482a4;
+  color: #fff;
 }
 
 #footer-con h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 #logo-footer {
@@ -186,7 +200,7 @@ p {
   outline: none;
   background: transparent;
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #eee;
   width: 100%;
   padding: 6px;
   margin-top: 10px;
@@ -215,13 +229,13 @@ p {
 .quicklinks ul li a,
 .contact ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .retail ul li,
 .quicklinks ul li,
 .contact ul li {
-  font-size: 15px;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 
@@ -229,14 +243,14 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   margin-bottom: 20px;
-  color: #000;
+  color: #fff;
   opacity: 40%;
 }
 
 .line {
   width: 100%; /* Set the width of the line to 100% of its container */
   height: 2px; /* Set the height to control the thickness of the line */
-  background-color: #000; /* Set the line color (e.g., black) */
+  background-color: #eee; /* Set the line color (e.g., black) */
   margin: 10px 0; /* Add margin to control spacing around the line */
 }
 
@@ -256,10 +270,37 @@ p {
   margin-top: 30px;
   height: 60px;
   max-width: 70%;
+  color: #fff;
 }
 
 .retail-con {
   margin-top: 50px;
+}
+
+#copyrightCon ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+#copyrightCon ul li {
+  font-size: 12px;
+  margin-right: 30px;
+}
+
+#copyrightCon ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+#copyrightCon li:first-child {
+  font-weight: bold;
+}
+
+#copyrightCon li:last-child {
+  font-size: 12px;
+  padding-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -269,7 +310,12 @@ p {
   .retail ul li,
   .quicklinks ul li,
   .contact ul li {
-    font-size: 15px;
+    font-size: 12px;
+  }
+  #copyrightCon li:last-child {
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
