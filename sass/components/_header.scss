@@ -6,6 +6,12 @@
   text-decoration: none;
   color: #000;
 }
+#main-nav {
+  display: flex;
+  justify-content: space-between; /* Ensures the button is on the right */
+  align-items: center;
+}
+
 #main-nav button {
   width: 20px;
   height: 20px;
@@ -14,15 +20,22 @@
   margin-bottom: 20px;
   transition: all 0.5s ease;
   border: 0;
+  margin-left: 92%;
 }
-
 #main-nav button.expanded {
   transform: rotate(90deg);
 }
 
 #burger-con {
-  margin-top: 20px;
+  position: absolute;
+  margin-top: 40px;
   margin-bottom: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: #fff;
+  z-index: 9999;
   display: none;
 }
 
@@ -66,19 +79,20 @@
 
 #logo img {
   width: 60%;
+  display: block;
   margin: 0 auto;
 }
 
 #header-icons ul {
   display: flex;
   list-style: none;
-  padding: 0px;
+  padding: 0;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 #header-icons ul li {
   font-size: 20px;
-  margin-right: 55px;
 }
 
 @media screen and (min-width: 768px) {
@@ -99,10 +113,20 @@
     margin-top: 20px;
     order: -1;
   }
+  #logo img {
+    width: 60%;
+    display: block;
+    margin: 0;
+  }
 
   #burger-con {
     display: block;
     font-size: 12px;
+    position: relative;
+    margin-top: 20px;
+    height: 0;
+    top: 0;
+    left: 0;
   }
 
   #burger-con ul li,
@@ -128,26 +152,24 @@
   }
 
   #main-nav {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     padding-left: 30px;
   }
 
   #header-icons {
-    margin-top: 14px;
     margin-bottom: 2%;
   }
 
-  #header-icons li:first-child {
-    margin-left: 0px;
-  }
-  #header-icons ul li {
-    margin-right: 21px;
-  }
-  #header-icons li:last-child {
-    margin-left: auto;
-    margin-right: 0px;
-  }
+  // #header-icons li:first-child {
+  //   margin-left: 0px;
+  // }
+  // #header-icons ul li {
+  //   margin-right: 21px;
+  // }
+  // #header-icons li:last-child {
+  //   margin-left: auto;
+  //   margin-right: 0px;
+  // }
 }
 
 @media screen and (min-width: 1200px) {
@@ -156,9 +178,13 @@
   }
 
   #main-nav {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
     margin-left: 60px;
+  }
+
+  #header-icons {
+    margin-top: 14px;
+    margin-bottom: 2%;
   }
 
   #burger-con ul li {
@@ -174,7 +200,7 @@
     margin-top: 28px;
   }
 
-  #header-icons ul li {
-    margin-right: 55px;
-  }
+  // #header-icons ul li {
+  //   margin-right: 55px;
+  // }
 }

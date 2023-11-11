@@ -1,0 +1,96 @@
+@use "../abstracts" as a;
+
+.table-mobile-bass-con-view {
+  display: block;
+}
+
+#krystal-banner {
+  display: none;
+}
+
+#bass-con div {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.bass-div {
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.bass-div h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .bass-div h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .table-mobile-bass-con-view {
+    display: none;
+  }
+  #krystal-banner {
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+
+  #krystal-banner div {
+    text-align: center;
+    color: a.$accent-color;
+    font-weight: bold;
+  }
+
+  .krystal-waves {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    visibility: hidden;
+  }
+
+  .krystal-single {
+    position: absolute;
+    top: 36%;
+    left: 56%;
+    visibility: hidden;
+  }
+
+  .high {
+    position: absolute;
+    top: 12%;
+    left: 9%;
+    visibility: hidden;
+    text-align: center;
+  }
+  .medium {
+    position: absolute;
+    top: 28%;
+    left: 23%;
+    visibility: hidden;
+    text-align: center;
+  }
+
+  .low {
+    position: absolute;
+    top: 37%;
+    left: 46%;
+    visibility: hidden;
+    text-align: center;
+  }
+  .bass-div {
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .bass-div h3 {
+    font-size: 25px;
+  }
+}

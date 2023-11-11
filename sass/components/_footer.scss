@@ -90,7 +90,6 @@
   margin-top: 30px;
   height: 60px;
   max-width: 70%;
-  color: #fff;
 }
 
 .retail-con {
@@ -138,6 +137,16 @@
     margin-left: auto;
     margin-right: 0;
   }
+  // #company-info {
+  //   grid-row: 2/2;
+  // }
+  #logo-footer {
+    margin-top: 0;
+  }
+
+  #company-info {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -150,10 +159,21 @@
   .quicklinks-con,
   .contacts-con {
     grid-row: 2/2;
-    margin-top: auto;
   }
 
   .retail-con {
     margin-top: 0px;
   }
+  #logo-footer {
+    margin-top: 30px;
+    height: 60px;
+    max-width: 70%;
+  }
+
+  #company-info {
+    margin-top: 0px;
+  }
+  // #footer-logo {
+  //   grid-row: 1/1;
+  // }
 }
