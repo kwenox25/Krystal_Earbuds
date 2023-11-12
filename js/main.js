@@ -41,13 +41,13 @@
     {
       title: "Magnetic Charging Pin 1:",
       text: "Magnetic charging pins are connectors used for recharging the earbuds. They are often magnetized to help the earbuds snap into place on a charging dock or case, ensuring a secure and reliable connection for charging. Magnetic Charging Pin 1 implies it's one of the two connectors on the earbud.",
-      image: "images/charge.png",
+      image: "images/battery.png",
     },
 
     {
       title: "Magnetic Charging Pin 2:",
       text: "Similar to Magnetic Charging Pin 1, this is the second connector used for charging the earbud. Having two pins often allows for faster charging and more secure connection between the earbud and the charging dock or case.",
-      image: "images/charge.png",
+      image: "images/battery.png",
     },
 
     {
@@ -88,12 +88,17 @@
 
   function showInfo() {
     let selected = document.querySelector(`#${this.slot}`);
-    gsap.to(selected, 1, { autoAlpha: 1 });
+    gsap.to(selected, {
+      autoAlpha: 1,
+      duration: 1,
+      x: -50,
+      ease: "power2.inOut",
+    });
   }
 
   function hideInfo() {
     let selected = document.querySelector(`#${this.slot}`);
-    gsap.to(selected, 1, { autoAlpha: 0 });
+    gsap.to(selected, { autoAlpha: 0, duration: 1, ease: "power2.inOut" });
   }
 
   //Event listeners
